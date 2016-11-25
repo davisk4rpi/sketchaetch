@@ -1,20 +1,28 @@
 .container{
-	width: 800px;
+	width: 512px;
 	margin: 0 auto;
 }
-.row, .col{
+
+.row{
 	margin: 0;
 	padding: 0;
-	height: 40px;
-	width: 672px;	
+	height: 32px;
+	width: 512px;	
 }
+
 .col{
 	display:inline-block;
-	width: 40px;
+	width: 32px;
+	height: 32px;
 	background-color: #666;
-	border-color: black;
-	border-style: solid;
-	border-width: 1px;
 	margin: 0;
 	padding: 0;
+}
+
+.blank{
+
+}
+
+.color{
+
 }
