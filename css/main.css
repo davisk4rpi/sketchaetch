@@ -26,3 +26,51 @@
 .color{
 
 }
+
+.overlay, .overlay1, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6, .overlay7, .overlay8, .overlay9, .overlay10{
+	width: 32px;
+	height: 32px;
+	background-color: black;
+}
+
+.overlay{
+	opacity: 0;
+}
+
+.overlay1{
+	opacity: .1;
+}
+
+.overlay2{
+	opacity: .2;
+}
+
+.overlay3{
+	opacity: .3;
+}
+
+.overlay4{
+	opacity: .4;
+}
+
+.overlay5{
+	opacity: .5;
+}
+
+.overlay6{
+	opacity: .6;
+}
+
+.overlay7{
+	opacity: .7;
+}
+
+.overlay8{
+	opacity: .8;
+}
+.overlay9{
+	opacity: .9;
+}
+.overlay10{
+	opacity: 1;
+}
