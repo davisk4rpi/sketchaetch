@@ -1,13 +1,21 @@
 var h = 16;
-var dim = 512 / h + "px";
-
 $('#reset').click(function(){
-
+	reset();
 });
 
-$(document).ready(function(){
-	$('.div', '.game') 
+$('#number_change').click(function(){
+	h = prompt("How many blocks per side do you want? (greater than 64 will start slowing the game down)");
+	reset();
+});
 
+function reset(){
+	$('div.game').empty();
+	load();
+	game();
+}
+
+function load(){
+	var dim = 512 / h + "px";
 	for (var i = 0; i < h; i++){
 		$('.game').append('<div class="row"></div>');
 		$('.row').css("height", ""+ dim);
@@ -15,6 +23,9 @@ $(document).ready(function(){
 	for (var j = 0; j < h; j++){
 			$('.row').append('<div class="col blank"></div></div>');
 	};
+}
+
+function game(){
 	$('div.col').mouseenter(function(){
 		if ($(this).hasClass('blank')){
 			var x = Math.floor(Math.random()*256);
@@ -72,6 +83,11 @@ $(document).ready(function(){
 	$('div.col').mouseleave(function(){
 		$(this).addClass('color');
 	});
+}
+
+$(document).ready(function(){
+	load();
+	game();
 
 
 });

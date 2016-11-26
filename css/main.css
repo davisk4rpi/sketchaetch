@@ -3,9 +3,16 @@
 	margin: 0 auto;
 }
 
+h1{
+	text-align: center;
+}
+
+button{
+	margin: 10px;
+}
 
 .header{
-	height: 50px;
+	height: auto;
 	margin: 0 auto;
 	width: auto;
 }
