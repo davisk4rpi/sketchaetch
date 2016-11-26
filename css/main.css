@@ -23,7 +23,9 @@
 .row{
 	margin: 0;
 	padding: 0;
-	width: 512px;	
+	width: 512px;
+	display: flex;
+	flex-direction: row;
 }
 
 .col{
@@ -32,6 +34,7 @@
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	flex: auto;
 }
 
 .blank{

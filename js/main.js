@@ -1,5 +1,9 @@
-var h = 64;
+var h = 16;
 var dim = 512 / h + "px";
+
+$('#reset').click(function(){
+
+});
 
 $(document).ready(function(){
 	$('.div', '.game') 
@@ -10,7 +14,6 @@ $(document).ready(function(){
 	};
 	for (var j = 0; j < h; j++){
 			$('.row').append('<div class="col blank"></div></div>');
-			$('.col').css("width", ""+ dim);
 	};
 	$('div.col').mouseenter(function(){
 		if ($(this).hasClass('blank')){
