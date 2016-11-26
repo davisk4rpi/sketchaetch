@@ -3,20 +3,35 @@
 	margin: 0 auto;
 }
 
+
+.header{
+	height: 50px;
+	margin: 0 auto;
+	width: auto;
+}
+
+.left{
+	float: left;
+	margin: auto;
+}
+
+.right{
+	float: right;
+	margin: auto;
+}
+
 .row{
 	margin: 0;
 	padding: 0;
-	height: 32px;
 	width: 512px;	
 }
 
 .col{
 	display:inline-block;
-	width: 32px;
-	height: 32px;
 	background-color: #666;
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
 
 .blank{
@@ -28,9 +43,9 @@
 }
 
 .overlay, .overlay1, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6, .overlay7, .overlay8, .overlay9, .overlay10{
-	width: 32px;
-	height: 32px;
 	background-color: black;
+	height: 100%;
+	width: 100%;
 }
 
 .overlay{

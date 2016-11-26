@@ -1,10 +1,16 @@
-$(document).ready(function(){
-	for (var i = 0; i < 16; i++){
-		$('.container').append('<div class="row"></div>');
-	};
-	for (var j = 0; j < 16; j++){
-			$('.row').append('<div class="col blank"></div></div>');
+var h = 64;
+var dim = 512 / h + "px";
 
+$(document).ready(function(){
+	$('.div', '.game') 
+
+	for (var i = 0; i < h; i++){
+		$('.game').append('<div class="row"></div>');
+		$('.row').css("height", ""+ dim);
+	};
+	for (var j = 0; j < h; j++){
+			$('.row').append('<div class="col blank"></div></div>');
+			$('.col').css("width", ""+ dim);
 	};
 	$('div.col').mouseenter(function(){
 		if ($(this).hasClass('blank')){
